@@ -9,12 +9,12 @@ function getRandomInt(min, max) {
 
 getRandomInt(3, 5);
 
-function stringLength(string, max) {
-  if (max < string.length) {
-    throw new Error('Количество строк не может быть больше максимально указанного значения!');
+function countStringLength(string, max) {
+  if (max <= string.length) {
+    return false;
   }
   return true;
 }
 
-stringLength('Строка для проверки', 2);
+countStringLength('Строка для проверки', 2);
 
